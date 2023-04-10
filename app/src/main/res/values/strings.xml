@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LAB_05</string>
+    <string name="todo_list">ToDo LIST</string>
+    <string name="view_task">VIEW TASK</string>
+    <string name="insert_task">INSERT TASK</string>
+    <string name="delete_task">DELETE TASK</string>
+    <string name="update_task">UPDATE TASK</string>
+    <string name="enter_id_to_update_or_delete_the_task">Enter ID to Update or Delete the Task</string>
+    <string name="enter_due_date_for_your_task">Enter due date for your task</string>
+</resources>

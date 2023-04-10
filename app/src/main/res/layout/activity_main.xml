@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="427dp"
+        android:layout_height="776dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_list"
+        android:textColor="#009688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="378dp"
+        android:layout_height="431dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tasks"
+        android:textColor="#00B0FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <EditText
+        android:id="@+id/enterTask"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter Your Task"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#9C3333"
+        android:textColorHint="#00E4AF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textColor="#00B0FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/enter_due_date_for_your_task"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#00E4AF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:text="@string/insert_task"
+        android:textColorLink="#090101"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:text="@string/view_task"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <EditText
+        android:id="@+id/enterID"
+        android:layout_width="348dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="@string/enter_id_to_update_or_delete_the_task"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#00E4AF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:text="@string/update_task"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:text="@string/delete_task"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+</androidx.constraintlayout.widget.ConstraintLayout>
